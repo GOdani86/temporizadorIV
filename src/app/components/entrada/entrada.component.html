@@ -1,0 +1,20 @@
+<div class="contenedor">
+    <mat-form-field>
+        Introduce numero de repeticiones:
+        <input matInput [(ngModel)]="repeticiones" type="number" >
+    </mat-form-field>
+    
+    <mat-form-field>
+        Introduce duración (en segundos:)
+        <input matInput [(ngModel)]="segundos" type="number">
+    </mat-form-field>
+    <button (click)="start()">Start!</button>
+    <div class="resultado">
+      <p>
+        REPETICION: {{cuentaVueltas}}
+      </p>
+      <p>
+        SEGUNDOS: {{tiempo}}
+      </p>
+    </div>   
+</div>
